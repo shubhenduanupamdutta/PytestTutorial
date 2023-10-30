@@ -27,3 +27,19 @@ class Circle(Shape):
     def perimeter(self):
         """Calculate perimeter of circle."""
         return 2 * math.pi * self.radius
+
+
+class Rectangle(Shape):
+    """Rectangle shape."""
+
+    def __init__(self, length: float, width: float):
+        self.length: float = length
+        self.width: float = width
+
+    def area(self) -> float:
+        """Calculate area of rectangle."""
+        return self.length * self.width
+
+    def perimeter(self) -> float:
+        """Calculate perimeter of rectangle."""
+        return 2 * (self.length + self.width)
