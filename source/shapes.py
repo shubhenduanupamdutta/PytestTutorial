@@ -48,3 +48,10 @@ class Rectangle(Shape):
     def perimeter(self) -> float:
         """Calculate perimeter of rectangle."""
         return 2 * (self.length + self.width)
+
+
+class Square(Rectangle):
+    """Square shape."""
+
+    def __init__(self, length: float):
+        super().__init__(length, length)
